@@ -1,10 +1,13 @@
 $(document).ready(function () {
-  $("saveBtn").on("click"), fucntion(), console.log(this);
-  var value = $(this).siblings(".description").val();
-  var time = $(this).attr("data-time");
-  var hour = moment().hour();
+  $("saveBtn").on("click"),
+    function () {
+      console.log(this);
+      var value = $(this).siblings(".description").val();
+      var time = $(this).attr("data-time");
+      var hour = moment().hour();
 
-  localStorage.setItem(time, value);
+      localStorage.setItem(time, value);
+    };
 });
 
 $("#currentDay").text(moment());
