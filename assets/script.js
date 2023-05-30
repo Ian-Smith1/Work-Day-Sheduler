@@ -25,10 +25,10 @@ for (let i = 9; i < 18; i++) {
 console.log(timeArray);
 
 function setColors() {
-  const currentHr = moment().hours();
+  var currentHr = moment().hours();
   console.log(currentHr);
   $(".time-block").each(function () {
-    const currentId = $(this).attr("id");
+    var currentId = $(this).attr("id");
     console.log(currentHr > currentId);
     if (currentHr > currentId) {
       $(this).addClass("past");
@@ -40,31 +40,31 @@ function setColors() {
   });
 }
 function saveLocalStorage() {
-  const userInput9 = localStorage.getItem("9");
+  var userInput9 = localStorage.getItem("9");
   $("#9").children(".description").text(userInput9);
 
-  const userInput10 = localStorage.getItem("10");
+  var userInput10 = localStorage.getItem("10");
   $("#10").children(".description").text(userInput10);
 
-  const userInput11 = localStorage.getItem("11");
+  var userInput11 = localStorage.getItem("11");
   $("#11").children(".description").text(userInput11);
 
-  const userInput12 = localStorage.getItem("12");
+  var userInput12 = localStorage.getItem("12");
   $("#12").children(".description").text(userInput12);
 
-  const userInput1 = localStorage.getItem("13");
+  var userInput1 = localStorage.getItem("13");
   $("#13").children(".description").text(userInput1);
 
-  const userInput2 = localStorage.getItem("14");
+  var userInput2 = localStorage.getItem("14");
   $("#14").children(".description").text(userInput2);
 
-  const userInput3 = localStorage.getItem("15");
+  var userInput3 = localStorage.getItem("15");
   $("#15").children(".description").text(userInput3);
 
-  const userInput4 = localStorage.getItem("16");
+  var userInput4 = localStorage.getItem("16");
   $("#16").children(".description").text(userInput4);
 
-  const userInput5 = localStorage.getItem("17");
+  var userInput5 = localStorage.getItem("17");
   $("#17").children(".description").text(userInput5);
 }
 
